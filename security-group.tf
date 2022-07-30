@@ -5,8 +5,8 @@ resource "aws_security_group" "main" {
 
   ingress {
     description = "DOCDB"
-    from_port   = var.DOCDB_PORT
-    to_port     = var.DOCDB_PORT
+    from_port   = var.PORT
+    to_port     = var.PORT
     protocol    = "TCP"
     cidr_blocks = var.ALLOW_SG_CIDR
   }

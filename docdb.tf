@@ -14,6 +14,6 @@ resource "aws_docdb_cluster_instance" "main" {
   count              = 1
   identifier         = "${local.TAG_PREFIX}-docdb-instance"
   cluster_identifier = aws_docdb_cluster.main.id
-  instance_class     = var.DOCDB_INSTANCE_CLASS
+  instance_class     = var.INSTANCE_CLASS
 }
 
